@@ -10,7 +10,7 @@ let getObject = (token, cb) => {
   });
 }
 
-let getToken = obj => jwt.sign(obj, SECRET_KEY, {expiresIn: 3});
+let getToken = obj => jwt.sign(obj, SECRET_KEY, {expiresIn: 10});
 
 let token1 = getToken(obj);
 
@@ -18,5 +18,8 @@ getObject(token1, (err, decoded) => {
   if(err) return console.log(err + '');
   console.log(decoded);
 })
+
+//pho 123
+//chao ban + username
 
 module.exports = {getToken, getObject};
