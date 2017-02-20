@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/vanpho93/jwt1912#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.3",
     "ejs": "^2.5.6",
     "express": "^4.14.1",
     "jsonwebtoken": "^7.3.0"
