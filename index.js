@@ -17,7 +17,7 @@ let token1 = getToken(obj);
 getObject(token1, (err, decoded) => {
   if(err) return console.log(err + '');
   console.log(decoded);
-})
+});
 
 //pho 123
 //chao ban + username
