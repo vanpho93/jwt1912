@@ -10,7 +10,7 @@ let getObject = (token, cb) => {
   });
 }
 
-let getToken = obj => jwt.sign(obj, SECRET_KEY, {expiresIn: 10});
+let getToken = obj => jwt.sign(obj, SECRET_KEY, {expiresIn: 10000000});
 
 let token1 = getToken(obj);
 
